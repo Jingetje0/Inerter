@@ -1078,6 +1078,473 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.3,
+          "y": 0.45,
+          "uniqueID": "id-392",
+          "name": "Prism along Y (XZ profile)",
+          "ioValues": [
+            {
+              "name": "Len",
+              "ioValue": 206.5
+            },
+            {
+              "name": "A",
+              "ioValue": 100
+            },
+            {
+              "name": "B",
+              "ioValue": 100
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-394",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-396",
+              "name": "Len",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-399",
+              "name": "A",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.3385,
+              "uniqueID": "id-402",
+              "name": "B",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.25,
+              "y": 0.2,
+              "uniqueID": "id-405",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 206.5,
+                  "currentEquation": "Len"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 96,
+                  "currentEquation": "B - 4"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.25,
+              "y": 0.5,
+              "uniqueID": "id-409",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 202.5,
+                  "currentEquation": "Len - 4"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 100,
+                  "currentEquation": "B"
+                }
+              ]
+            },
+            {
+              "atomType": "ShrinkWrap",
+              "x": 0.45,
+              "y": 0.35,
+              "uniqueID": "id-413",
+              "name": "Shrink Wrap",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.58,
+              "y": 0.35,
+              "uniqueID": "id-418",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 100,
+                  "currentEquation": "A"
+                }
+              ]
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.7,
+              "y": 0.35,
+              "uniqueID": "id-422",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 90
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.82,
+              "y": 0.35,
+              "uniqueID": "id-428",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 103.25,
+                  "currentEquation": "Len/2"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 50,
+                  "currentEquation": "A/2"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-405",
+              "ap2ID": "id-413"
+            },
+            {
+              "ap2Name": "Shape2",
+              "ap1ID": "id-409",
+              "ap2ID": "id-413"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-413",
+              "ap2ID": "id-418"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-418",
+              "ap2ID": "id-422"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-422",
+              "ap2ID": "id-428"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-428",
+              "ap2ID": "id-394"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.3,
+          "y": 0.75,
+          "uniqueID": "id-434",
+          "name": "Prism along Z (XY profile)",
+          "ioValues": [
+            {
+              "name": "Len",
+              "ioValue": 206.5
+            },
+            {
+              "name": "A",
+              "ioValue": 100
+            },
+            {
+              "name": "B",
+              "ioValue": 100
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-436",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-438",
+              "name": "Len",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-441",
+              "name": "A",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.3385,
+              "uniqueID": "id-444",
+              "name": "B",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.25,
+              "y": 0.2,
+              "uniqueID": "id-447",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 206.5,
+                  "currentEquation": "Len"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 96,
+                  "currentEquation": "A - 4"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.25,
+              "y": 0.5,
+              "uniqueID": "id-451",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 202.5,
+                  "currentEquation": "Len - 4"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 100,
+                  "currentEquation": "A"
+                }
+              ]
+            },
+            {
+              "atomType": "ShrinkWrap",
+              "x": 0.45,
+              "y": 0.35,
+              "uniqueID": "id-455",
+              "name": "Shrink Wrap",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.6,
+              "y": 0.35,
+              "uniqueID": "id-460",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 100,
+                  "currentEquation": "B"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.78,
+              "y": 0.35,
+              "uniqueID": "id-464",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 103.25,
+                  "currentEquation": "Len/2"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": -50,
+                  "currentEquation": "-B/2"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-447",
+              "ap2ID": "id-455"
+            },
+            {
+              "ap2Name": "Shape2",
+              "ap1ID": "id-451",
+              "ap2ID": "id-455"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-455",
+              "ap2ID": "id-460"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-460",
+              "ap2ID": "id-464"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-464",
+              "ap2ID": "id-436"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Intersection",
+          "x": 0.55,
+          "y": 0.3,
+          "uniqueID": "id-470",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Intersection",
+          "x": 0.7,
+          "y": 0.45,
+          "uniqueID": "id-474",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -1087,9 +1554,29 @@
           "ap2ID": "id-356"
         },
         {
+          "ap2Name": "Len",
+          "ap1ID": "id-347",
+          "ap2ID": "id-392"
+        },
+        {
+          "ap2Name": "Len",
+          "ap1ID": "id-347",
+          "ap2ID": "id-434"
+        },
+        {
           "ap2Name": "A",
           "ap1ID": "id-350",
           "ap2ID": "id-356"
+        },
+        {
+          "ap2Name": "A",
+          "ap1ID": "id-350",
+          "ap2ID": "id-392"
+        },
+        {
+          "ap2Name": "A",
+          "ap1ID": "id-350",
+          "ap2ID": "id-434"
         },
         {
           "ap2Name": "B",
@@ -1097,8 +1584,38 @@
           "ap2ID": "id-356"
         },
         {
-          "ap2Name": "number or geometry",
+          "ap2Name": "B",
+          "ap1ID": "id-353",
+          "ap2ID": "id-392"
+        },
+        {
+          "ap2Name": "B",
+          "ap1ID": "id-353",
+          "ap2ID": "id-434"
+        },
+        {
+          "ap2Name": "geometry1",
           "ap1ID": "id-356",
+          "ap2ID": "id-470"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-392",
+          "ap2ID": "id-470"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-434",
+          "ap2ID": "id-474"
+        },
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-470",
+          "ap2ID": "id-474"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-474",
           "ap2ID": "id-345"
         }
       ],
