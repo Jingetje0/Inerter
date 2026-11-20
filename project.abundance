@@ -650,6 +650,172 @@
         }
       ],
       "currentEquation": "X_A + t_A"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.5,
+      "y": 0.1,
+      "uniqueID": "id-311",
+      "name": "Skeleton",
+      "ioValues": [
+        {
+          "name": "X_p",
+          "ioValue": 171
+        },
+        {
+          "name": "Z_p",
+          "ioValue": 11.5
+        },
+        {
+          "name": "W_box",
+          "ioValue": 100
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-313",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.1538,
+          "uniqueID": "id-315",
+          "name": "X_p",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.2462,
+          "uniqueID": "id-318",
+          "name": "Z_p",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.3385,
+          "uniqueID": "id-321",
+          "name": "W_box",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.3,
+          "y": 0.1,
+          "uniqueID": "id-324",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 1
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4,
+          "y": 0.1,
+          "uniqueID": "id-327",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 100,
+              "currentEquation": "W_box"
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.5,
+          "y": 0.1,
+          "uniqueID": "id-331",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 90
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6,
+          "y": 0.1,
+          "uniqueID": "id-337",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 171,
+              "currentEquation": "X_p"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 50,
+              "currentEquation": "W_box/2"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 11.5,
+              "currentEquation": "Z_p"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-324",
+          "ap2ID": "id-327"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-327",
+          "ap2ID": "id-331"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-331",
+          "ap2ID": "id-337"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-337",
+          "ap2ID": "id-313"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -657,6 +823,11 @@
       "ap2Name": "Z_in_bot",
       "ap1ID": "id-138",
       "ap2ID": "id-230"
+    },
+    {
+      "ap2Name": "W_box",
+      "ap1ID": "id-160",
+      "ap2ID": "id-311"
     },
     {
       "ap2Name": "Z_roller",
@@ -679,6 +850,11 @@
       "ap2ID": "id-259"
     },
     {
+      "ap2Name": "Z_p",
+      "ap1ID": "id-245",
+      "ap2ID": "id-311"
+    },
+    {
       "ap2Name": "x_rack0",
       "ap1ID": "id-250",
       "ap2ID": "id-254"
@@ -692,6 +868,11 @@
       "ap2Name": "X_p",
       "ap1ID": "id-254",
       "ap2ID": "id-265"
+    },
+    {
+      "ap2Name": "X_p",
+      "ap1ID": "id-254",
+      "ap2ID": "id-311"
     },
     {
       "ap2Name": "L_H",
