@@ -1,13 +1,745 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Inerter",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Inerter",
+  "ioValues": [
+    {
+      "name": "H_box",
+      "ioValue": 100
+    },
+    {
+      "name": "t_tb",
+      "ioValue": 3
+    },
+    {
+      "name": "Travel",
+      "ioValue": 0
+    },
+    {
+      "name": "s_stroke",
+      "ioValue": 150
+    },
+    {
+      "name": "e_over",
+      "ioValue": 5
+    },
+    {
+      "name": "m_tooth",
+      "ioValue": 5
+    },
+    {
+      "name": "g_rear",
+      "ioValue": 1
+    },
+    {
+      "name": "L_max",
+      "ioValue": 200
+    },
+    {
+      "name": "W_box",
+      "ioValue": 100
+    },
+    {
+      "name": "t_rear",
+      "ioValue": 5
+    },
+    {
+      "name": "t_side",
+      "ioValue": 4
+    },
+    {
+      "name": "t_front",
+      "ioValue": 8
+    },
+    {
+      "name": "t_part",
+      "ioValue": 8
+    },
+    {
+      "name": "t_skin",
+      "ioValue": 3
+    },
+    {
+      "name": "c_rot",
+      "ioValue": 1.5
+    },
+    {
+      "name": "L_rack",
+      "ioValue": 180
+    },
+    {
+      "name": "h_pitch",
+      "ioValue": 18.5
+    },
+    {
+      "name": "r_P1",
+      "ioValue": 9
+    },
+    {
+      "name": "a_2",
+      "ioValue": 36
+    },
+    {
+      "name": "D_G2",
+      "ioValue": 62
+    },
+    {
+      "name": "D_fly",
+      "ioValue": 90
+    },
+    {
+      "name": "t_spine",
+      "ioValue": 8
+    },
+    {
+      "name": "D_roller",
+      "ioValue": 22
+    },
+    {
+      "name": "L_bump",
+      "ioValue": 20
+    },
+    {
+      "name": "D_bump",
+      "ioValue": 15
+    },
+    {
+      "name": "d_bpocket",
+      "ioValue": 4
+    },
+    {
+      "name": "t_A",
+      "ioValue": 20
+    },
+    {
+      "name": "d_fpocket",
+      "ioValue": 7
+    },
+    {
+      "name": "d_clamp",
+      "ioValue": 10,
+      "currentEquation": "10"
+    },
+    {
+      "name": "L_rod",
+      "ioValue": 195
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.1538,
+      "uniqueID": "id-132",
+      "name": "H_box",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.2462,
+      "uniqueID": "id-135",
+      "name": "t_tb",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.03,
+      "uniqueID": "id-138",
+      "name": "-H_box/2 + t_tb",
+      "currentEquation": "-H_box/2 + t_tb"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.3385,
+      "uniqueID": "id-142",
+      "name": "Travel",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.4308,
+      "uniqueID": "id-145",
+      "name": "s_stroke",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.5231,
+      "uniqueID": "id-148",
+      "name": "e_over",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.6154,
+      "uniqueID": "id-151",
+      "name": "m_tooth",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.7077,
+      "uniqueID": "id-154",
+      "name": "g_rear",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.8,
+      "uniqueID": "id-157",
+      "name": "L_max",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.8923,
+      "uniqueID": "id-160",
+      "name": "W_box",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-163",
+      "name": "t_rear",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-166",
+      "name": "t_side",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-169",
+      "name": "t_front",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-172",
+      "name": "t_part",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-175",
+      "name": "t_skin",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-178",
+      "name": "c_rot",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-181",
+      "name": "L_rack",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-184",
+      "name": "h_pitch",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-187",
+      "name": "r_P1",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-190",
+      "name": "a_2",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-193",
+      "name": "D_G2",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-196",
+      "name": "D_fly",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-199",
+      "name": "t_spine",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-202",
+      "name": "D_roller",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-205",
+      "name": "L_bump",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-208",
+      "name": "D_bump",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-211",
+      "name": "d_bpocket",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-214",
+      "name": "t_A",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-217",
+      "name": "d_fpocket",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-220",
+      "name": "d_clamp",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.95,
+      "uniqueID": "id-223",
+      "name": "L_rod",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.08,
+      "uniqueID": "id-226",
+      "name": "H_box/2 - t_tb",
+      "currentEquation": "H_box/2 - t_tb"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.13,
+      "uniqueID": "id-230",
+      "name": "Z_in_bot + 1 + D_roller/2",
+      "ioValues": [
+        {
+          "name": "Z_in_bot",
+          "ioValue": -47
+        }
+      ],
+      "currentEquation": "Z_in_bot + 1 + D_roller/2"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.18,
+      "uniqueID": "id-235",
+      "name": "Z_roller + D_roller/2",
+      "ioValues": [
+        {
+          "name": "Z_roller",
+          "ioValue": -35
+        }
+      ],
+      "currentEquation": "Z_roller + D_roller/2"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.23,
+      "uniqueID": "id-240",
+      "name": "Z_spine_bot + t_spine",
+      "ioValues": [
+        {
+          "name": "Z_spine_bot",
+          "ioValue": -24
+        }
+      ],
+      "currentEquation": "Z_spine_bot + t_spine"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.28,
+      "uniqueID": "id-245",
+      "name": "Z_rack_face + h_pitch + r_P1",
+      "ioValues": [
+        {
+          "name": "Z_rack_face",
+          "ioValue": -16
+        }
+      ],
+      "currentEquation": "Z_rack_face + h_pitch + r_P1"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.35,
+      "uniqueID": "id-250",
+      "name": "t_rear + g_rear + e_over",
+      "currentEquation": "t_rear + g_rear + e_over"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.4,
+      "uniqueID": "id-254",
+      "name": "x_rack0 + s_stroke + e_over + m_tooth",
+      "ioValues": [
+        {
+          "name": "x_rack0",
+          "ioValue": 11
+        }
+      ],
+      "currentEquation": "x_rack0 + s_stroke + e_over + m_tooth"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.45,
+      "uniqueID": "id-259",
+      "name": "X_p - sqrt(a_2^2 - Z_p^2)",
+      "ioValues": [
+        {
+          "name": "X_p",
+          "ioValue": 171
+        },
+        {
+          "name": "Z_p",
+          "ioValue": 11.5
+        }
+      ],
+      "currentEquation": "X_p - sqrt(a_2^2 - Z_p^2)"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.5,
+      "uniqueID": "id-265",
+      "name": "X_p + D_G2/2 + c_rot + t_skin",
+      "ioValues": [
+        {
+          "name": "X_p",
+          "ioValue": 171
+        }
+      ],
+      "currentEquation": "X_p + D_G2/2 + c_rot + t_skin"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.55,
+      "uniqueID": "id-270",
+      "name": "L_H - t_front",
+      "ioValues": [
+        {
+          "name": "L_H",
+          "ioValue": 206.5
+        }
+      ],
+      "currentEquation": "L_H - t_front"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.6,
+      "uniqueID": "id-275",
+      "name": "L_H + e_over + 1",
+      "ioValues": [
+        {
+          "name": "L_H",
+          "ioValue": 206.5
+        }
+      ],
+      "currentEquation": "L_H + e_over + 1"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.65,
+      "uniqueID": "id-280",
+      "name": "L_H - 14",
+      "ioValues": [
+        {
+          "name": "L_H",
+          "ioValue": 206.5
+        }
+      ],
+      "currentEquation": "L_H - 14"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.7,
+      "uniqueID": "id-285",
+      "name": "(X_A + d_fpocket + d_clamp) - (X_bush_in - 3 - s_stroke - e_over)",
+      "ioValues": [
+        {
+          "name": "X_A",
+          "ioValue": 212.5
+        },
+        {
+          "name": "X_bush_in",
+          "ioValue": 192.5
+        }
+      ],
+      "currentEquation": "(X_A + d_fpocket + d_clamp) - (X_bush_in - 3 - s_stroke - e_over)"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.75,
+      "uniqueID": "id-291",
+      "name": "L_H - d_bpocket - L_bump",
+      "ioValues": [
+        {
+          "name": "L_H",
+          "ioValue": 206.5
+        }
+      ],
+      "currentEquation": "L_H - d_bpocket - L_bump"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.8,
+      "uniqueID": "id-296",
+      "name": "t_rear + L_bump",
+      "currentEquation": "t_rear + L_bump"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.85,
+      "uniqueID": "id-300",
+      "name": "(X_fb - s_stroke) - X_rb",
+      "ioValues": [
+        {
+          "name": "X_fb",
+          "ioValue": 182.5
+        },
+        {
+          "name": "X_rb",
+          "ioValue": 25
+        }
+      ],
+      "currentEquation": "(X_fb - s_stroke) - X_rb"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.9,
+      "uniqueID": "id-306",
+      "name": "X_A + t_A",
+      "ioValues": [
+        {
+          "name": "X_A",
+          "ioValue": 212.5
+        }
+      ],
+      "currentEquation": "X_A + t_A"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "Z_in_bot",
+      "ap1ID": "id-138",
+      "ap2ID": "id-230"
+    },
+    {
+      "ap2Name": "Z_roller",
+      "ap1ID": "id-230",
+      "ap2ID": "id-235"
+    },
+    {
+      "ap2Name": "Z_spine_bot",
+      "ap1ID": "id-235",
+      "ap2ID": "id-240"
+    },
+    {
+      "ap2Name": "Z_rack_face",
+      "ap1ID": "id-240",
+      "ap2ID": "id-245"
+    },
+    {
+      "ap2Name": "Z_p",
+      "ap1ID": "id-245",
+      "ap2ID": "id-259"
+    },
+    {
+      "ap2Name": "x_rack0",
+      "ap1ID": "id-250",
+      "ap2ID": "id-254"
+    },
+    {
+      "ap2Name": "X_p",
+      "ap1ID": "id-254",
+      "ap2ID": "id-259"
+    },
+    {
+      "ap2Name": "X_p",
+      "ap1ID": "id-254",
+      "ap2ID": "id-265"
+    },
+    {
+      "ap2Name": "L_H",
+      "ap1ID": "id-265",
+      "ap2ID": "id-270"
+    },
+    {
+      "ap2Name": "L_H",
+      "ap1ID": "id-265",
+      "ap2ID": "id-275"
+    },
+    {
+      "ap2Name": "L_H",
+      "ap1ID": "id-265",
+      "ap2ID": "id-280"
+    },
+    {
+      "ap2Name": "L_H",
+      "ap1ID": "id-265",
+      "ap2ID": "id-291"
+    },
+    {
+      "ap2Name": "X_A",
+      "ap1ID": "id-275",
+      "ap2ID": "id-285"
+    },
+    {
+      "ap2Name": "X_A",
+      "ap1ID": "id-275",
+      "ap2ID": "id-306"
+    },
+    {
+      "ap2Name": "X_bush_in",
+      "ap1ID": "id-280",
+      "ap2ID": "id-285"
+    },
+    {
+      "ap2Name": "X_fb",
+      "ap1ID": "id-291",
+      "ap2ID": "id-300"
+    },
+    {
+      "ap2Name": "X_rb",
+      "ap1ID": "id-296",
+      "ap2ID": "id-300"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
