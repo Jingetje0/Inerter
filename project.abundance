@@ -5210,7 +5210,7 @@
                     },
                     {
                       "name": "height",
-                      "ioValue": 6.1
+                      "ioValue": 6
                     }
                   ]
                 },
@@ -5531,7 +5531,7 @@
                     },
                     {
                       "name": "height",
-                      "ioValue": 6.1
+                      "ioValue": 6
                     }
                   ]
                 },
@@ -8485,6 +8485,578 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.6,
+          "y": 0.2,
+          "uniqueID": "id-2347",
+          "name": "Front plate",
+          "ioValues": [
+            {
+              "name": "Env",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "KO",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "X_box_front",
+              "ioValue": 198.5
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-2349",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-2351",
+              "name": "Env",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-2354",
+              "name": "KO",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.3385,
+              "uniqueID": "id-2357",
+              "name": "X_box_front",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.2,
+              "y": 0.7,
+              "uniqueID": "id-2360",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 50
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 200
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3,
+              "y": 0.7,
+              "uniqueID": "id-2364",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 200
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.4,
+              "y": 0.7,
+              "uniqueID": "id-2368",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 223.5,
+                  "currentEquation": "X_box_front + 25"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": -100
+                }
+              ]
+            },
+            {
+              "atomType": "Intersection",
+              "x": 0.5,
+              "y": 0.4,
+              "uniqueID": "id-2374",
+              "ioValues": [
+                {
+                  "name": "geometry1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "geometry2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.6,
+              "y": 0.4,
+              "uniqueID": "id-2378",
+              "name": "Front plate",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "Front plate"
+              ]
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.7,
+              "y": 0.4,
+              "uniqueID": "id-2381",
+              "name": "PETG print",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "PETG print"
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.8,
+              "y": 0.45,
+              "uniqueID": "id-2384",
+              "ioValues": [
+                {
+                  "name": "makeDisjoint",
+                  "ioValue": true
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "ExtractTag",
+              "x": 0.9,
+              "y": 0.45,
+              "uniqueID": "id-2390",
+              "name": "Extract Front plate",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tagIndex": 0,
+              "selectedTags": [
+                "Front plate"
+              ],
+              "includeUntagged": false,
+              "notKeepOut": false
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry1",
+              "ap1ID": "id-2351",
+              "ap2ID": "id-2374"
+            },
+            {
+              "ap2Name": "Shape2",
+              "ap1ID": "id-2354",
+              "ap2ID": "id-2384"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2360",
+              "ap2ID": "id-2364"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2364",
+              "ap2ID": "id-2368"
+            },
+            {
+              "ap2Name": "geometry2",
+              "ap1ID": "id-2368",
+              "ap2ID": "id-2374"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2374",
+              "ap2ID": "id-2378"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2378",
+              "ap2ID": "id-2381"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-2381",
+              "ap2ID": "id-2384"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2384",
+              "ap2ID": "id-2390"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-2390",
+              "ap2ID": "id-2349"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.6,
+          "y": 0.35,
+          "uniqueID": "id-2393",
+          "name": "Lid",
+          "ioValues": [
+            {
+              "name": "Env",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "KO",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "X_box_front",
+              "ioValue": 198.5
+            },
+            {
+              "name": "Z_in_top",
+              "ioValue": 47
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-2395",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-2397",
+              "name": "Env",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-2400",
+              "name": "KO",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.3385,
+              "uniqueID": "id-2403",
+              "name": "X_box_front",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.4308,
+              "uniqueID": "id-2406",
+              "name": "Z_in_top",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.2,
+              "y": 0.7,
+              "uniqueID": "id-2409",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 199.5,
+                  "currentEquation": "X_box_front + 1"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 200
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3,
+              "y": 0.7,
+              "uniqueID": "id-2413",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 53,
+                  "currentEquation": "100 - Z_in_top"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.4,
+              "y": 0.7,
+              "uniqueID": "id-2417",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 98.75,
+                  "currentEquation": "(X_box_front - 1)/2"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 47,
+                  "currentEquation": "Z_in_top"
+                }
+              ]
+            },
+            {
+              "atomType": "Intersection",
+              "x": 0.5,
+              "y": 0.4,
+              "uniqueID": "id-2423",
+              "ioValues": [
+                {
+                  "name": "geometry1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "geometry2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.6,
+              "y": 0.4,
+              "uniqueID": "id-2427",
+              "name": "Lid",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "Lid"
+              ]
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.7,
+              "y": 0.4,
+              "uniqueID": "id-2430",
+              "name": "PETG print",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "PETG print"
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.8,
+              "y": 0.45,
+              "uniqueID": "id-2433",
+              "ioValues": [
+                {
+                  "name": "makeDisjoint",
+                  "ioValue": true
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "ExtractTag",
+              "x": 0.9,
+              "y": 0.45,
+              "uniqueID": "id-2439",
+              "name": "Extract Lid",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tagIndex": 0,
+              "selectedTags": [
+                "Lid"
+              ],
+              "includeUntagged": false,
+              "notKeepOut": false
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry1",
+              "ap1ID": "id-2397",
+              "ap2ID": "id-2423"
+            },
+            {
+              "ap2Name": "Shape2",
+              "ap1ID": "id-2400",
+              "ap2ID": "id-2433"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2409",
+              "ap2ID": "id-2413"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2413",
+              "ap2ID": "id-2417"
+            },
+            {
+              "ap2Name": "geometry2",
+              "ap1ID": "id-2417",
+              "ap2ID": "id-2423"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2423",
+              "ap2ID": "id-2427"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2427",
+              "ap2ID": "id-2430"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-2430",
+              "ap2ID": "id-2433"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2433",
+              "ap2ID": "id-2439"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-2439",
+              "ap2ID": "id-2395"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.85,
+          "y": 0.3,
+          "uniqueID": "id-2442",
+          "ioValues": [
+            {
+              "name": "makeDisjoint",
+              "ioValue": false
+            },
+            {
+              "name": "Shape 1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape4",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
         },
         {
           "atomType": "Output",
@@ -11523,7 +12095,42 @@
         {
           "ap2Name": "KO",
           "ap1ID": "id-1073",
+          "ap2ID": "id-2347"
+        },
+        {
+          "ap2Name": "KO",
+          "ap1ID": "id-1073",
+          "ap2ID": "id-2393"
+        },
+        {
+          "ap2Name": "KO",
+          "ap1ID": "id-1073",
           "ap2ID": "id-572"
+        },
+        {
+          "ap2Name": "Shape2",
+          "ap1ID": "id-2347",
+          "ap2ID": "id-2442"
+        },
+        {
+          "ap2Name": "Shape3",
+          "ap1ID": "id-2393",
+          "ap2ID": "id-2442"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-2442",
+          "ap2ID": "id-480"
+        },
+        {
+          "ap2Name": "Env",
+          "ap1ID": "id-482",
+          "ap2ID": "id-2347"
+        },
+        {
+          "ap2Name": "Env",
+          "ap1ID": "id-482",
+          "ap2ID": "id-2393"
         },
         {
           "ap2Name": "Env",
@@ -11539,6 +12146,16 @@
           "ap2Name": "X_box_front",
           "ap1ID": "id-488",
           "ap2ID": "id-1073"
+        },
+        {
+          "ap2Name": "X_box_front",
+          "ap1ID": "id-488",
+          "ap2ID": "id-2347"
+        },
+        {
+          "ap2Name": "X_box_front",
+          "ap1ID": "id-488",
+          "ap2ID": "id-2393"
         },
         {
           "ap2Name": "X_box_front",
@@ -11569,6 +12186,11 @@
           "ap2Name": "Z_in_top",
           "ap1ID": "id-500",
           "ap2ID": "id-1073"
+        },
+        {
+          "ap2Name": "Z_in_top",
+          "ap1ID": "id-500",
+          "ap2ID": "id-2393"
         },
         {
           "ap2Name": "Z_in_top",
@@ -11711,9 +12333,9 @@
           "ap2ID": "id-1073"
         },
         {
-          "ap2Name": "number or geometry",
+          "ap2Name": "Shape 1",
           "ap1ID": "id-572",
-          "ap2ID": "id-480"
+          "ap2ID": "id-2442"
         }
       ],
       "fileTypeVersion": 1
