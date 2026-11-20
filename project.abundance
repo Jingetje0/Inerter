@@ -887,15 +887,15 @@
           "ioValues": [
             {
               "name": "Len",
-              "ioValue": 10
+              "ioValue": 206.5
             },
             {
               "name": "A",
-              "ioValue": 10
+              "ioValue": 100
             },
             {
               "name": "B",
-              "ioValue": 10
+              "ioValue": 100
             }
           ],
           "topLevel": false,
@@ -947,12 +947,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 10,
+                  "ioValue": 100,
                   "currentEquation": "A"
                 },
                 {
                   "name": "y length",
-                  "ioValue": 6,
+                  "ioValue": 96,
                   "currentEquation": "B - 4"
                 }
               ]
@@ -965,12 +965,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 6,
+                  "ioValue": 96,
                   "currentEquation": "A - 4"
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10,
+                  "ioValue": 100,
                   "currentEquation": "B"
                 }
               ]
@@ -1020,7 +1020,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 10,
+                  "ioValue": 206.5,
                   "currentEquation": "Len"
                 }
               ]
@@ -1080,7 +1080,28 @@
           "fileTypeVersion": 1
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "Len",
+          "ap1ID": "id-347",
+          "ap2ID": "id-356"
+        },
+        {
+          "ap2Name": "A",
+          "ap1ID": "id-350",
+          "ap2ID": "id-356"
+        },
+        {
+          "ap2Name": "B",
+          "ap1ID": "id-353",
+          "ap2ID": "id-356"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-356",
+          "ap2ID": "id-345"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
